@@ -1,0 +1,5 @@
+{
+  "name": "Damas Delivery System",
+  "description": "Internal delivery management system for Damas with real-time tracking and role-based access.",
+  "requestFramePermissions": []
+}

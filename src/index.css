@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tajawal", "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --color-damas-maroon: #800020;
+  --color-damas-beige: #F5F5DC;
+  --color-damas-gold: #D4AF37;
+  --color-damas-white: #FFFFFF;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Force vertical layout for flex containers that might be row on desktop */
+  .mobile-col {
+    flex-direction: column !important;
+  }
+
+  /* Increase touch targets */
+  button, input, select {
+    min-height: 48px; /* Increased to 48px for better touch */
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-damas-beige);
+  color: #333;
+}
+
+/* Prevent text selection on interactive elements for app-like feel */
+button {
+  user-select: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
