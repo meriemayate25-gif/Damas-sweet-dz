@@ -5,7 +5,7 @@ export interface User {
   id: number;
   name: string;
   email: string;
-  role: 'admin' | 'confirmatrice' | 'livreur';
+  role: 'admin' | 'confirmatrice' | 'livreur' | 'comptable' | 'factory';
   created_at: string;
 }
 

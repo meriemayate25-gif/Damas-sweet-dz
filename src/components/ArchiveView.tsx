@@ -96,7 +96,7 @@ export function ArchiveView({ orders, stock, date }: ArchiveViewProps) {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-100">
-                  {Object.entries(driverStats).map(([name, stats]) => {
+                  {Object.entries(driverStats).map(([name, stats]: [string, { taken: number; delivered: number; small: number; medium: number; large: number }]) => {
                     const difference = stats.taken - stats.delivered;
                     return (
                       <tr key={name} className="hover:bg-gray-50/50">

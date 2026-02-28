@@ -4,7 +4,7 @@ interface User {
   id: number;
   name: string;
   email: string;
-  role: 'admin' | 'confirmatrice' | 'livreur' | 'comptable';
+  role: 'admin' | 'confirmatrice' | 'livreur' | 'comptable' | 'factory';
 }
 
 interface AuthContextType {
